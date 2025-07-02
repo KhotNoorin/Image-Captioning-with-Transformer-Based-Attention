@@ -17,32 +17,59 @@ A deep learning project that generates natural language captions for images usin
 
 
 image-captioning-transformer/
-- ├── app.py                        # Streamlit UI app
-- ├── train.py                     # Training loop
+
+├── app.py                        # Streamlit UI app
+
+├── train.py                     # Training loop
+
 ├── infer.py                     # Caption generation script
+
 ├── build_vocab.py               # Builds tokenizer vocab
+
 ├── download_coco_subset.py      # Downloads 1000 COCO images (300MB)
+
 │
+
 ├── models/
+
 │   ├── encoder.py               # CNN encoder (ResNet)
+
 │   ├── decoder.py               # Transformer decoder
+
 │   └── image_captioning.py      # Full encoder-decoder model
+
 │
+
 ├── utils/
+
 │   ├── tokenizer.py             # Custom tokenizer class
+
 │   └── dataset.py               # COCO Dataset wrapper
+
 │
+
 ├── config/
+
 │   └── config.yaml              # All hyperparameters and paths
+
 │
+
 ├── data/
+
 │   └── raw/                     # Downloaded images & captions
+
 │       ├── train2017_subset/
+
 │       └── captions_subset.json
+
 │
+
 ├── checkpoints/                 # Saved model weights
+
 │
+
 ├── requirements.txt             # Python dependencies
+
 └── README.md                    # You are here
 
 
